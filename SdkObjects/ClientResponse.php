@@ -28,7 +28,7 @@ class ClientResponse
             $rateLimited = true;
         }
 
-        $this->sdk = new SdkContainer;
+        $this->sdk = new SdkContainer();
         $this->sdk->outcome->success = $success ?? false;
         $this->sdk->outcome->rateLimited = $rateLimited ?? false;
         $this->sdk->outcome->http->statusCode = $httpStatusCode ?? null;

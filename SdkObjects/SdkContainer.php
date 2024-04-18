@@ -13,7 +13,7 @@ class SdkContainer
 
     public function __construct()
     {
-        $this->outcome = new OutcomeContainer;
-        $this->page = new PageContainer;
+        $this->outcome = new OutcomeContainer();
+        $this->page = new PageContainer();
     }
 }

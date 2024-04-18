@@ -14,6 +14,6 @@ class OutcomeContainer
 
     public function __construct()
     {
-        $this->http = new HttpContainer;
+        $this->http = new HttpContainer();
     }
 }

@@ -7,7 +7,6 @@
 namespace EncoreDigitalGroup\SdkClientFoundation;
 
 use EncoreDigitalGroup\SdkClientFoundation\SdkObjects\ClientResponse;
-use GuzzleHttp\Client;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Handler\CurlHandler;
@@ -40,7 +39,7 @@ class BaseClient
 
     public function createClient(): void
     {
-        $handler = new CurlHandler;
+        $handler = new CurlHandler();
         $stack = HandlerStack::create($handler);
         $this->client = new GuzzleClient([
             'base_uri' => $this->config->getBaseUri(),
