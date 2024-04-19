@@ -6,6 +6,7 @@
 
 namespace EncoreDigitalGroup\SdkClientFoundation;
 
+use EncoreDigitalGroup\SdkClientFoundation\Interfaces\IBaseClient;
 use EncoreDigitalGroup\SdkClientFoundation\SdkObjects\ClientResponse;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\ClientException;
@@ -13,7 +14,7 @@ use GuzzleHttp\Handler\CurlHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Request;
 
-class BaseClient
+class BaseClient implements IBaseClient
 {
     protected ClientConfiguration $config;
     protected GuzzleClient $client;

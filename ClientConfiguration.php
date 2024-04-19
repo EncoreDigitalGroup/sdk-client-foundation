@@ -7,12 +7,14 @@
 
 namespace EncoreDigitalGroup\SdkClientFoundation;
 
+use EncoreDigitalGroup\SdkClientFoundation\Interfaces\IClientConfiguration;
+
 /**
  * @api
  */
-class ClientConfiguration
+class ClientConfiguration implements IClientConfiguration
 {
-    const string DEFAULT_AUTHORIZATION_TYPE = 'Basic';
+    const DEFAULT_AUTHORIZATION_TYPE = 'Basic';
 
     protected string $authorization;
     protected string $authorizationToken;
