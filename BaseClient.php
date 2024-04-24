@@ -17,7 +17,9 @@ use GuzzleHttp\Psr7\Request;
 class BaseClient implements IBaseClient
 {
     protected ClientConfiguration $config;
+
     protected GuzzleClient $client;
+
     protected int $attempts;
 
     public function __construct(mixed $config)

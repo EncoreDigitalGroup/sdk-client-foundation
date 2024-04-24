@@ -9,7 +9,10 @@ namespace EncoreDigitalGroup\SdkClientFoundation\SdkObjects;
 class HttpContainer
 {
     public ?int $statusCode;
+
     public string $message;
+
     public string $service;
+
     public int $attempts;
 }
