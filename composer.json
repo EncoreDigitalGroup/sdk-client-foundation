@@ -1,6 +1,6 @@
 {
     "name": "encoredigitalgroup/sdk-client-foundation",
-    "description": "A collection of standard library classes and functions for PHP.",
+    "description": "Base Configurations for SDK Clients",
     "type": "library",
     "license": "proprietary",
     "require": {
