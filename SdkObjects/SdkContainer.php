@@ -9,7 +9,6 @@ namespace EncoreDigitalGroup\SdkClientFoundation\SdkObjects;
 class SdkContainer
 {
     public OutcomeContainer $outcome;
-
     public PageContainer $page;
 
     public function __construct()

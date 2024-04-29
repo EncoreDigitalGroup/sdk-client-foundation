@@ -11,7 +11,6 @@ use EncoreDigitalGroup\SdkClientFoundation\HttpStatusCode;
 class ClientResponse
 {
     public SdkContainer $sdk;
-
     public object $service;
 
     public function __construct(mixed $clientResponse)

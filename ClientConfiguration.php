@@ -17,11 +17,8 @@ class ClientConfiguration implements IClientConfiguration
     const DEFAULT_AUTHORIZATION_TYPE = 'Basic';
 
     protected string $authorization;
-
     protected string $authorizationToken;
-
     protected string $authorizationType;
-
     protected string $baseUri;
 
     public function getAuthorization(): string

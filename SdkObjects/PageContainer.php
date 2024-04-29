@@ -9,6 +9,5 @@ namespace EncoreDigitalGroup\SdkClientFoundation\SdkObjects;
 class PageContainer
 {
     public ?int $next;
-
     public ?int $previous;
 }

@@ -17,9 +17,7 @@ use GuzzleHttp\Psr7\Request;
 class BaseClient implements IBaseClient
 {
     protected ClientConfiguration $config;
-
     protected GuzzleClient $client;
-
     protected int $attempts;
 
     public function __construct(mixed $config)
@@ -42,8 +40,8 @@ class BaseClient implements IBaseClient
 
     public function createClient(): void
     {
-        $handler = new CurlHandler();
-        $stack = HandlerStack::create($handler);
+        $curlHandler = new CurlHandler();
+        $stack = HandlerStack::create($curlHandler);
         $this->client = new GuzzleClient([
             'base_uri' => $this->config->getBaseUri(),
             'handler' => $stack,
